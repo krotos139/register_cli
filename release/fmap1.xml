@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<fmap>
+	<!-- <device>./device</device> -->
+	<device>/sys/bus/spi/devices/spi32766.2/fpga</device>
+	<offset>0</offset>
+	<size>32</size>
+</fmap>
+
+<io>
+	<group>
+		<name>identifity</name>
+		<description>identification information</description>
+		<read/>
+		<entry>
+			<type>octet</type>
+			<name>DEV_ID</name>
+			<octet>0</octet>
+		</entry>
+		<entry>
+			<type>octet</type>
+			<name>DEV_VER</name>
+			<octet>1</octet>
+		</entry>
+		<entry>
+			<type>octet</type>
+			<name>FW_VER</name>
+			<octet>2</octet>
+		</entry>
+	</group>
+</io>
+
+
